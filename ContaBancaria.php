@@ -1,15 +1,37 @@
 <?php
 
+declare(strict_types=1);
+
     class ContaBancaria 
     {
-        private $banco;        
+        /**
+        * @var string
+        **/
+        private $banco;
+        /**
+        * @var string
+        **/
         private $nomeTitular;
+        /**
+        * @var string
+        **/
         private $numeroAgencia;
+        /**
+        * @var string
+        **/
         private $numeroConta;
+        /**
+        * @var float
+        **/
         private $saldo;
 
-        public function __construct($banco, $nomeTitular, $numeroAgencia, $numeroConta, $saldo)
-        {
+        public function __construct(
+            string $banco, 
+            string $nomeTitular, 
+            string $numeroAgencia, 
+            string $numeroConta, 
+            float $saldo
+        ){            
             $this->banco = $banco;
             $this->nomeTitular = $nomeTitular;
             $this->numeroAgencia = $numeroAgencia;
@@ -17,18 +39,18 @@
             $this->saldo = $saldo;
         }
 
-        public function obterSaldo()
+        public function obterSaldo(): string
         {
             return 'Seu saldo atual é: R$ ' .$this->saldo. ',00';
         }
 
-        public function depositar($valor)
+        public function depositar(float $valor): string
         {
             $this->saldo += $valor;
             return 'Depósito de R$ ' .$valor. ' realizado com sucesso!';
         }
 
-        public function sacar($valor)
+        public function sacar(float $valor): string
         {
             $this->saldo -= $valor;
             return 'Saque de R$ ' .$valor. ' realizado com sucesso!';
@@ -53,7 +75,7 @@
         300.00 // saldo
     ); 
     
-    /*var_dump($conta2);
+    var_dump($conta2);
 
     echo $conta->obterSaldo(); // 0
 
@@ -71,4 +93,4 @@
     
     echo "\n";
 
-    echo $conta->obterSaldo(); // 150.00*/
+    echo $conta->obterSaldo(); // 150.00
