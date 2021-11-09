@@ -14,7 +14,7 @@ S  segundos
 
 $data = new DateTime();
 
-$intervalo = new DateInterval('P5Y10M5DT10H50M10S'); // adiciona um período de 5 minutos
+$intervalo = new DateInterval('P5Y10M5DT10H50M10S'); // adiciona um período
 $data->sub($intervalo);
 
 var_dump($data);
