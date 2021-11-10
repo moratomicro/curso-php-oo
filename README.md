@@ -15,3 +15,8 @@ Capturando exceções em PHP
 Realizado o exercício:
 Crie uma função chamada divisao() que deverá receber dois números. Na função, verifique se algum dos números passados por parâmetro é igual a 0, caso positivo, lance uma exceção.
 Em seguida, escreva um algoritmo responsável por executar a função divisao() forçando-a lançar a exceção (passando 0 em algum parâmetro) e realize o tratamento e captura através do Try Catch.
+
+Introdução a banco de dados com PHP
+* Conectando ao banco de dados MySQL com PDO
+* Inserindo registros no banco de dados MySQL
+* Listando registros do banco de dados MySQL
