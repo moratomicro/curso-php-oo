@@ -20,3 +20,8 @@ Introdução a banco de dados com PHP
 * Conectando ao banco de dados MySQL com PDO
 * Inserindo registros no banco de dados MySQL
 * Listando registros do banco de dados MySQL
+
+Resolução do exercício final:
+Crie uma classe chamada "Blog" com as seguintes funcionalidades (métodos): Listagem, inclusão, edição e exclusão de posts.
+A conexão com a base de dados pode ser realizada no método construtor da classe.
+Crie um arquivo responsável por tratar as operações e realizar de fato a chamada para cada operação (método) da classe de persistência.
